@@ -37,9 +37,17 @@ and returns the largest value in the array. Test the function in your index page
 echo "Largest Number <br>";
 echo largest($numbers) . "<br>";
 echo "<br>";
-echo "Step 5. In your functions file, define a function called removeDups() that takes an array as a parameter and returns an array with duplicates removed. So, given the numbers array, removeDups() 
+echo "Step 5: In your functions file, define a function called removeDups() that takes an array as a parameter and returns an array with duplicates removed. So, given the numbers array, removeDups() 
 would return [7, 9, 8, 6]. (Order doesn’t matter.) Test the function from your index page. Commit your changes.<br>";
 echo "Removing duplicate numbers<br>";
 $noDuplicates = remDup($numbers);
 printArr($noDuplicates);
 
+echo "<br><br>Step 6: Define a function called distribution() that takes an array as a parameter and returns an associative array with each value from the original array, and the number of times that value occurs in the original array. The keys should be sorted<br>";
+
+$disArr = distribution($numbers);
+foreach($disArr as $num => $amount)
+{
+    echo $num . "=>" . $amount;
+    echo "<br>";
+}
