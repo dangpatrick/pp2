@@ -7,3 +7,8 @@ function printArr($myArr)
         echo $item . "<br>";
     }
 }
+
+function largest($larArr)
+{
+    return max($larArr);
+}
