@@ -35,6 +35,11 @@ echo "<br><br>Step 3: Moved print function into an include file called functions
 echo "<br><br>Step 4: In your functions file, define a function called largest() that takes an array as a parameter 
 and returns the largest value in the array. Test the function in your index page, and then commit your changes. <br>";
 echo "Largest Number <br>";
-echo largest($numbers);
-
+echo largest($numbers) . "<br>";
+echo "<br>";
+echo "Step 5. In your functions file, define a function called removeDups() that takes an array as a parameter and returns an array with duplicates removed. So, given the numbers array, removeDups() 
+would return [7, 9, 8, 6]. (Order doesn’t matter.) Test the function from your index page. Commit your changes.<br>";
+echo "Removing duplicate numbers<br>";
+$noDuplicates = remDup($numbers);
+printArr($noDuplicates);
 
